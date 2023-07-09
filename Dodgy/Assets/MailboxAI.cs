@@ -12,18 +12,22 @@ public class MailboxAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+   
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+        Debug.Log(mailbox.remainingDistance);
+        Debug.Log(mailbox.stoppingDistance);
         mailbox.SetDestination(player.position);
-        if (mailbox.remainingDistance <= mailbox.stoppingDistance)
+        if ((mailbox.remainingDistance <= mailbox.stoppingDistance)&&(mailbox.remainingDistance > 0))
         {
-            gameOver = true;
-            SceneManager.LoadScene(1);
+
+            //gameOver = true;
+            SceneManager.LoadScene(2);
         }
+
      
     }
 }

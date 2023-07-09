@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Dialogue.unity
+    guid: 010eab637f529430b810b42f4a72f226
+  - enabled: 1
     path: Assets/Scenes/davescene.unity
     guid: 85660bc89c0a740029c27fc38c842f6b
   - enabled: 1
     path: Assets/Scenes/GAMEOVER.unity
     guid: c8c92b4f37894446098a727694d8edf5
+  - enabled: 1
+    path: Assets/Scenes/LevelComplete.unity
+    guid: d4213c783f1274a55b7b94af501fc691
   m_configObjects: {}

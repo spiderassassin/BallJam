@@ -7,7 +7,7 @@ public class movement : MonoBehaviour
 {
     // Animator animator;
     public float horizontalMove;
-    public int speed = 4;
+    public int speed = 8;
     public int jumpAmount = 20;
     public float verticalMove;
     public float cameraAngle;
@@ -41,8 +41,8 @@ public class movement : MonoBehaviour
 
         if (isWalkingHorizontal || isWalkingVertical)
         {
-            horizontalMove = Input.GetAxis("Horizontal") * Time.deltaTime * 150;
-            verticalMove = Input.GetAxis("Vertical") * Time.deltaTime * 150;
+            horizontalMove = Input.GetAxis("Horizontal") * Time.deltaTime * 300;
+            verticalMove = Input.GetAxis("Vertical") * Time.deltaTime * 300;
 
             cameraAngle = Camera.main.transform.localEulerAngles.y;
 
@@ -73,7 +73,7 @@ public class movement : MonoBehaviour
 
         if (jumpPressed && isGrounded())
         {
-            rb.AddForce(Vector2.up * jumpAmount);
+            //rb.AddForce(Vector2.up * jumpAmount);
         }
     }
 
