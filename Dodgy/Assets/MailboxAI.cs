@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class MailboxAI : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class MailboxAI : MonoBehaviour
         if (mailbox.remainingDistance <= mailbox.stoppingDistance)
         {
             gameOver = true;
+            SceneManager.LoadScene(1);
         }
      
     }
