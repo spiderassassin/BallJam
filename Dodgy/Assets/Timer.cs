@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     public float time = 0;
     //public bool isRunning = true;
     public Text text;
-    float starttime =120;
+    float starttime =60;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +26,7 @@ public class Timer : MonoBehaviour
         }
         if (time<= 0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
 
     }

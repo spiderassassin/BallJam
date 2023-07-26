@@ -9,6 +9,11 @@ public class restart : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void quit()
+    {
+        Application.Quit();
+    }
 
-  
+
+
 }

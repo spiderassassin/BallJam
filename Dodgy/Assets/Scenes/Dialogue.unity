@@ -182,12 +182,12 @@ GameObject:
   - component: {fileID: 345686946}
   - component: {fileID: 345686945}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &345686944
 RectTransform:
   m_ObjectHideFlags: 0
@@ -204,9 +204,9 @@ RectTransform:
   m_Father: {fileID: 1611171658}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -181}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 26}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &345686945
@@ -525,7 +525,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 300}
+  m_SizeDelta: {x: 750, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045446459
 MonoBehaviour:
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -912,8 +912,9 @@ GameObject:
   - component: {fileID: 2099980628}
   - component: {fileID: 2099980627}
   - component: {fileID: 2099980626}
+  - component: {fileID: 2099980630}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -935,9 +936,9 @@ RectTransform:
   m_Father: {fileID: 1876607324}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 165}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -42}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2099980626
@@ -955,10 +956,9 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - "Dodgy: Hey kids! It\u2019s your favourite YouTuber DodgyTM here, back with
-      another vlog! We\u2019re rollin\u2019 to the mailbox right now to open up some
-      of your fan mail, I\u2019m excited to see what surprises y\u2019all have for
-      me."
+    - "Dodgy: Hey kids! It\u2019s your favourite YouTuber Dodgy here, back with another
+      vlog! We\u2019re rollin\u2019 to the mailbox right now to open up some of your
+      fan mail, I\u2019m excited to see what surprises y\u2019all have for me."
     - "Dodgy: Oh boy, a fancy fonted letter! Let\u2019s open it!"
     - 'Dear Mr. Dodgy,
 
@@ -983,6 +983,8 @@ MonoBehaviour:
     - "Maily: Huh? You think you can just ignore this very real letter, you criminal?
       Look at the wax seal! It screams legitimacy and elegance! It\u2019s my job
       to make sure you\u2019ve received it! Don\u2019t run away, get back here! "
+  cont: {fileID: 345686943}
+  start: {fileID: 2099980624}
 --- !u!114 &2099980627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1077,6 +1079,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099980624}
   m_CullTransparentMesh: 1
+--- !u!114 &2099980630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099980624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa7bc3a96e5f4792a5049d9f361f5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cont: {fileID: 345686943}
+  start: {fileID: 2099980624}
 --- !u!1 &2140116505
 GameObject:
   m_ObjectHideFlags: 0
